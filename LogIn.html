@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen font-inter">
+
+  <div class="bg-white p-8 rounded-xl w-full max-w-md shadow-md text-center">
+    
+
+    <div class="flex justify-center items-center mb-4">
+      <img src="assets/logo.png" alt="Notes Logo" class="w-24 h-auto">
+    </div>
+
+    <h2 class="text-2xl font-bold text-gray-900 mb-1">Welcome to Note</h2>
+    <p class="text-sm text-gray-500 mb-6">Please log in to continue</p>
+
+    <form class="space-y-4">
+   
+      <div class="text-left">
+        <label for="email" class="block text-sm font-medium text-gray-900 mb-1">Email Address</label>
+        <input type="email" id="email" placeholder="email@example.com" 
+          class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <small class="error-message text-red-500 text-xs mt-1 block"></small>
+      </div>
+
+      <div class="text-left">
+        <div class="flex justify-between items-center mb-1 text-sm">
+          <label for="password" class="font-medium text-gray-900">Password</label>
+          <a href="#" class="text-blue-500 hover:underline">Forgot?</a>
+        </div>
+        <div class="relative">
+          <input type="password" id="password" 
+            class="w-full px-3 py-2 pr-10 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <img src="assets/Show.png" alt="Show Password" class="toggle-password absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 cursor-pointer">
+        </div>
+        <small class="error-message text-red-500 text-xs mt-1 block"></small>
+      </div>
+
+      
+      <button type="submit" 
+        class="w-full py-3 bg-blue-600 text-white font-semibold rounded-md text-sm hover:bg-blue-700 transition">
+        Login
+      </button>
+
+     
+      <div class="relative my-6 text-center text-xs text-gray-500">
+        <span class="bg-white px-2 relative z-10">Or log in with:</span>
+        <div class="absolute top-1/2 left-0 w-full h-px bg-gray-200"></div>
+      </div>
+
+      
+      <button type="button" 
+        class="w-full flex items-center justify-center gap-2 px-4 py-2 border border-gray-300 rounded-md text-sm font-medium bg-white hover:bg-gray-50">
+        <img src="assets/Google.png" alt="Google" class="w-4 h-auto"> Google
+      </button>
+
+     
+      <div class="text-xs text-gray-500 mt-5">
+        No account yet? 
+        <a href="#" class="text-blue-600 font-medium hover:underline">Sign Up</a>
+      </div>
+    </form>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
